@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
+
+import { AppRoutingModule } from './app-routing.module';
+
 import { MatButtonModule,
          MatCheckboxModule,
          MatCardModule,
@@ -10,12 +13,21 @@ import { MatButtonModule,
          MatGridListModule,
          } from '@angular/material';
 
+
+import { HomeComponent,
+         ExamplesComponent,
+         } from './pages/index';
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ExamplesComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     MatButtonModule,
     MatCheckboxModule,
     MatCardModule,
