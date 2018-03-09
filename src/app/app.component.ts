@@ -15,6 +15,5 @@ export class AppComponent {
     {text: 'something else', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
   
-  
-  
+
 }
