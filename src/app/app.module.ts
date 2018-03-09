@@ -7,7 +7,8 @@ import { MatButtonModule,
          MatToolbarModule,
          MatMenuModule,
          MatIconModule,
-         MatGridListModule } from '@angular/material';
+         MatGridListModule,
+         } from '@angular/material';
 
 @NgModule({
   declarations: [
