@@ -4,6 +4,19 @@ import { Component } from '@angular/core';
   selector: 'app-home',
   template: `
 
+  
+   <mat-grid-list cols="4" rowHeight="300px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>
+
+  
+  
   <mat-grid-list cols="2" rowHeight="200px">
   <mat-grid-tile
       *ngFor="let item of tester"
@@ -43,6 +56,13 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   title = 'home';
 
+    tiles = [
+    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
+    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
+    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
+    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+  ];
+  
   
     tester = [
     {text: 'Commiticatons', cols: 2, rows: 1, color: '#FFFFFFF'},
