@@ -16,6 +16,7 @@ import { MatButtonModule,
 
 import { HomeComponent,
          ExamplesComponent,
+         CategoriesComponent,
          } from './pages/index';
 
 
@@ -23,6 +24,7 @@ import { HomeComponent,
   declarations: [
     AppComponent,
     HomeComponent,
+    CategoriesComponent,
     ExamplesComponent
   ],
   imports: [
