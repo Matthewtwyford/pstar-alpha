@@ -1,0 +1,15 @@
+
+myObj = {
+   "categories":"Collision Avoidance",
+   "questions": {
+    
+	"question" : "Which statement is true with regard to aircraft converging at approximately the same altitude?",
+
+	"answers": {
+	   { 1 : "A jet airliner has the right of way over all other aircraft", correct: false }
+       { 2 : "An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.",  correct: true }
+       { 3 : "An aeroplane has the right of way over all other aircraft which are converging from the left.", correct: false }
+       { 4 : "Aeroplanes towing gliders must give way to helicopters.", correct: false }
+	}
+   }
+ }

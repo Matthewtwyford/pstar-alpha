@@ -4,16 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent,
          ExamplesComponent,
          CategoriesComponent
-      } from './pages/index';
-
+        } from './pages/index';
 
 const routes: Routes = [
     { path: '',  redirectTo: 'home', pathMatch: 'full', },
     { path: 'home', component: HomeComponent },
-    
-    
-    { path: 'cotergories', component: CategoriesComponent },
-    
+    { path: 'catergories', component: CategoriesComponent },
     { path: 'examples', component: ExamplesComponent },
     { path: '**', redirectTo: '', }
 ];
