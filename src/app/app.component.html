@@ -2,8 +2,12 @@
   <mat-toolbar-row>
     <span>Pstar app</span>
     <span class="example-spacer"></span>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
+    
+    <mat-icon class="example-icon" [routerLink]="['/abbreviations']">Abbrivataions</mat-icon>
+    
+    <mat-icon class="example-icon" [routerLink]="['/categories']">Categories</mat-icon>
+    
+    <mat-icon class="example-icon" [routerLink]="['/pstar-exam']">Take the test</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 

@@ -55,7 +55,6 @@ export class HomeComponent {
     {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
   
-
   categories = [
     {title: '1.0 COLLISION AVOIDANCE', text: 'sdsdsdsds', cols: 2, rows: 1, color: '#FFFFFFF'},
     {title: '2.0 VISUAL SIGNALS' , text: 'sdsds' , cols: 2, rows: 1, color: '#F4F4F4'},

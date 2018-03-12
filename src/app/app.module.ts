@@ -16,15 +16,16 @@ import { MatButtonModule,
 
 import { HomeComponent,
          ExamplesComponent,
+         AbbreviationsComponent,
          CategoriesComponent,
          } from './pages/index';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CategoriesComponent,
+    AbbreviationsComponent,
     ExamplesComponent
   ],
   imports: [
