@@ -5,6 +5,10 @@ import { ActivatedRoute } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
+
+    ngOnInit() {
+    }
+
 }

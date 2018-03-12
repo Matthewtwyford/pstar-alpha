@@ -27,11 +27,10 @@ const routes: Routes = [
         { path: 'controllled-airspace', component: CategoriesComponent },
         { path: 'aviation-occurrences', component: CategoriesComponent },
 
-      
-        { path: 'abbreviations', component: AbbreviationsComponent },
-        { path: '404', component: HomeComponent },
     ]},
     
+    { path: 'abbreviations', component: AbbreviationsComponent },
+    { path: '404', component: HomeComponent },
     { path: 'examples', component: ExamplesComponent },
     { path: '**', redirectTo: '', }
 ];
@@ -40,8 +39,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(
       routes,
-      //{ enableTracing: true }, // <-- debugging purposes only
-      { useHash: true }
+      { useHash: true, enableTracing: true }, // <-- debugging purposes only
     )
   ],
   exports: [

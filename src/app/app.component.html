@@ -3,11 +3,10 @@
     <span>Pstar app</span>
     <span class="example-spacer"></span>
     
-    <mat-icon class="example-icon" [routerLink]="['/abbreviations']">Abbrivataions</mat-icon>
+    <button mat-raised-button color="primary" [routerLink]="['abbreviations']">Abbrivataions </button>
+    <button mat-raised-button color="accent" [routerLink]="['/categories']">Categories</button>
+    <button mat-raised-button color="accent" [routerLink]="['/pstar-exam']">Take the test</button>
     
-    <mat-icon class="example-icon" [routerLink]="['/categories']">Categories</mat-icon>
-    
-    <mat-icon class="example-icon" [routerLink]="['/pstar-exam']">Take the test</mat-icon>
   </mat-toolbar-row>
 </mat-toolbar>
 

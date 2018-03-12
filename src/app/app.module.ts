@@ -11,6 +11,7 @@ import { MatButtonModule,
          MatMenuModule,
          MatIconModule,
          MatGridListModule,
+         MatListModule
          } from '@angular/material';
 
 
@@ -37,7 +38,8 @@ import { HomeComponent,
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
