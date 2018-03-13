@@ -4,16 +4,14 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
 template:`
  <app-pagetitle [pageTitle]="'Study'"></app-pagetitle>
-
-  {{ id }}
-  
+{{ id }}
  <mat-card>Simple card</mat-card>
 `,
 styleUrls: ['./study.component.css']
 })
 export class StudyComponent implements OnInit, OnDestroy {
   title = 'Study';
-  
+
   id: number;
   private sub: any;
 
@@ -24,7 +22,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(
       params => {
-       this.id = +params['id']; // (+) converts string 'id' to a number
+       this.id = +params['id'];
        // In a real app: dispatch action to load the details here.
     });
   }
