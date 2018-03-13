@@ -13,7 +13,11 @@ export class ExamplesComponent {
     {text: 'Soemthign', cols: 2, rows: 1, color: '#D32F2F'},
     {text: 'something else', cols: 2, rows: 1, color: '#DDBDF1'},
   ];
-  
-  
+    
+    isLinear = false;
+
+  constructor() { }
+
+  ngOnInit() {}
   
 }

@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 import { AppRoutingModule } from './app-routing.module';
 
 import { MatButtonModule,
@@ -12,7 +15,8 @@ import { MatButtonModule,
          MatIconModule,
          MatGridListModule,
          MatListModule,
-         MatTooltipModule
+         MatTooltipModule,
+         MatStepperModule
          } from '@angular/material';
 
 import { HomeComponent,
@@ -30,6 +34,7 @@ import { HomeComponent,
     ExamplesComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
@@ -40,7 +45,8 @@ import { HomeComponent,
     MatIconModule,
     MatGridListModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
