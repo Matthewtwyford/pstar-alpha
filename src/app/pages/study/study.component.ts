@@ -8,9 +8,9 @@ template:`
  <mat-card>
    <h2> Q.1 Which statement is true with regard to aircraft converging at approximately the same altitude?.</h2>
    <mat-list role="list">
-     
+
     <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer0">
+      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
         <mat-radio-button class="example-radio-button" [value]="1">
             A jet airliner has the right of way over all other aircraft
         </mat-radio-button>
@@ -18,24 +18,24 @@ template:`
     </mat-list-item>
     
     <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer1">
-        <mat-radio-button class="example-radio-button" [value]="1">
+      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
+        <mat-radio-button class="example-radio-button" [value]="2">
             An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.
         </mat-radio-button>
       </mat-radio-group>
     </mat-list-item>
 
     <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer2">
-        <mat-radio-button class="example-radio-button" [value]="1">
+      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
+        <mat-radio-button class="example-radio-button" [value]="3">
             An aeroplane has the right of way over all other aircraft which are converging from the left.
         </mat-radio-button>
       </mat-radio-group>
     </mat-list-item>
-    
+
     <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer3">
-        <mat-radio-button class="example-radio-button" [value]="1">
+      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
+        <mat-radio-button class="example-radio-button" [value]="4">
            Aeroplanes towing gliders must give way to helicopters.
         </mat-radio-button>
       </mat-radio-group>

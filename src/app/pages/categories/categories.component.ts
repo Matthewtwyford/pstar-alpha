@@ -20,7 +20,7 @@ template: `
         </mat-card-header>
 
         <mat-card-actions>
-          <button mat-raised-button color="primary" [routerLink]="['/study',  category.id ]" matTooltip="test">Study tester {{ category.id }}</button>
+          <button mat-raised-button color="primary" [routerLink]="['/study', category.id ]" matTooltip="test">Study {{ category.id }}</button>
           <button mat-raised-button color="accent" [routerLink]="['/test']" matTooltip="Tester">Test</button>
         </mat-card-actions>
 
