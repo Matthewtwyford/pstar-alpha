@@ -28,6 +28,10 @@ import { HomeComponent,
          StudyComponent
          } from './pages/index';
 
+import { TitleComponent
+         } from './elements/index';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +39,9 @@ import { HomeComponent,
     CategoriesComponent,
     AbbreviationsComponent,
     ExamplesComponent,
-    StudyComponent
+    StudyComponent,
+    
+    TitleComponent
   ],
   imports: [
     BrowserAnimationsModule,

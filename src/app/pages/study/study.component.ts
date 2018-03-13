@@ -4,13 +4,9 @@ import { Component } from '@angular/core';
 template:`
 <h1>{{ title }}</h1>
   <mat-card>Simple card</mat-card>
-  
-
-
 `,
 styleUrls: ['./study.component.css']
 })
 export class StudyComponent {
   title = 'Study';
-
 }
