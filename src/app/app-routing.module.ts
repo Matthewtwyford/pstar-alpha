@@ -34,7 +34,7 @@ const routes: Routes = [
     { path: 'abbreviations', component: AbbreviationsComponent },
     { path: '404', component: HomeComponent },
     { path: 'examples', component: ExamplesComponent },
-    { path: '**', redirectTo: '', }
+    { path: '**', redirectTo: '404', }
 ];
 
 @NgModule({

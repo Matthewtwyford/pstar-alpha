@@ -1,7 +1,6 @@
   
  <app-pagetitle [pageTitle]="'Categories'"></app-pagetitle>
-  
-
+ 
   <mat-grid-list cols="12" rowHeight="200px" gutterSize='20px'>
   
   <mat-grid-tile
@@ -13,8 +12,8 @@
     <mat-card class="card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{category.title}}</mat-card-title>
-        <mat-card-subtitle>{{category.text}}</mat-card-subtitle>
+        <mat-card-title>{{ category.title }}</mat-card-title>
+        <mat-card-subtitle>{{ category.text }}</mat-card-subtitle>
       </mat-card-header>
       
       <mat-card-content>
@@ -27,6 +26,7 @@
       
       <mat-card-actions>
         <button mat-raised-button color="primary" [routerLink]="['/study']" matTooltip="test">Study {{  category.id }}</button>
+                <button mat-raised-button color="primary" [routerLink]="['/study',  category.id  ]" matTooltip="test">Study tester {{  category.id }}</button>
         <button mat-raised-button color="accent" [routerLink]="['/test']" matTooltip="Tester">Test</button>
       </mat-card-actions>
     
