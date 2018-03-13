@@ -9,7 +9,7 @@ template: `
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.color">
-      <img mat-card-image src="/src/assets/images/{{ tile.img }}.jpg" alt="Photo of a Shiba Inu">
+      <img mat-card-image src="/src/assets/images/{{ tile.img }}.jpeg" alt="">
     <h2>{{tile.text}}</h2>
   </mat-grid-tile>
 </mat-grid-list>
