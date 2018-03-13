@@ -12,7 +12,6 @@ const routes: Routes = [
     { path: '',  redirectTo: 'home', pathMatch: 'full', },
     { path: 'home', component: HomeComponent },
 
-    //{ path: 'study', component: StudyComponent },
     { path: 'study/:id', component: StudyComponent },
 
     { path: 'categories', component: CategoriesComponent,  children: [
