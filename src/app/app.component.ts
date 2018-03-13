@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+  title = 'pstar';
 
     ngOnInit() {
     }
