@@ -10,7 +10,7 @@ import { HomeComponent,
 const routes: Routes = [
     { path: '',  redirectTo: 'home', pathMatch: 'full', },
     { path: 'home', component: HomeComponent },
-    { path: 'catergories', component: CategoriesComponent,  children: [
+    { path: 'categories', component: CategoriesComponent,  children: [
         { path: '',  redirectTo: 'catergories', pathMatch: 'full', },
         { path: 'collision-avoidance', component: CategoriesComponent },
         

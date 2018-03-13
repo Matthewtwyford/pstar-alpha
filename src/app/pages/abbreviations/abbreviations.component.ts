@@ -8,30 +8,31 @@ import { Component } from '@angular/core';
 export class AbbreviationsComponent {
   title = 'abbreviatsion';
 
+  /*
   abbreviations: any = [
 
-    "A" :[
+    "A" : [
        { attr: 'AAE', text: 'Above Aerodrome level'},
        { attr: 'ADIZ', text: 'Air Defence Identicationm Zone'},
       ],
     
-     "B" :[
+     "B" : [
        { attr: 'BB', text: 'VVVAbove Aerodrome level'},
        { attr: 'BB', text: 'CCCCAir Defence Identicationm Zone'},
       ],
-     "C" :[
+     "C" : [
        { attr: 'CC', text: 'VVVAbove Aerodrome level'},
        { attr: 'CC', text: 'CCCCAir Defence Identicationm Zone'},
       ],
-     "D" :[
+     "D" : [
        { attr: 'DD', text: 'VVVAbove Aerodrome level'},
        { attr: 'DD', text: 'CCCCAir Defence Identicationm Zone'},
       ],
-     "E" :[
+     "E" : [
        { attr: 'DD', text: 'VVVAbove Aerodrome level'},
        { attr: 'DD', text: 'CCCCAir Defence Identicationm Zone'},
       ],
-
   ];
+  */
   
 }
