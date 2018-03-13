@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
 template:`
-<h1>{{ title }}</h1>
-  <mat-card>Simple card</mat-card>
+ <app-pagetitle [pageTitle]="'Study'"></app-pagetitle>
+ <mat-card>Simple card</mat-card>
 `,
 styleUrls: ['./study.component.css']
 })
