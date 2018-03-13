@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 import { AppRoutingModule } from './app-routing.module';
 
 import { MatButtonModule,
@@ -26,6 +25,7 @@ import { HomeComponent,
          ExamplesComponent,
          AbbreviationsComponent,
          CategoriesComponent,
+         StudyComponent
          } from './pages/index';
 
 @NgModule({
@@ -34,7 +34,8 @@ import { HomeComponent,
     HomeComponent,
     CategoriesComponent,
     AbbreviationsComponent,
-    ExamplesComponent
+    ExamplesComponent,
+    StudyComponent
   ],
   imports: [
     BrowserAnimationsModule,

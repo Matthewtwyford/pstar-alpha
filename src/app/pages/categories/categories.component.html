@@ -20,16 +20,16 @@
       
       
       <mat-card-content>
-	       <!--
-	       <p>
-	         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-	       </p>
-	       -->
+       <!--
+       <p>
+         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+       </p>
+       -->
       </mat-card-content>
       
       <mat-card-actions>
-        <button mat-raised-button color="primary">Study</button>
-        <button mat-raised-button color="accent">Test</button>
+        <button mat-raised-button color="primary" [routerLink]="['/study']" matTooltip="test">Study {{  category.id }}</button>
+        <button mat-raised-button color="accent" [routerLink]="['/test']" matTooltip="Tester">Test</button>
       </mat-card-actions>
     
     </mat-card>

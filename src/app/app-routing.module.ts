@@ -4,16 +4,19 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent,
          ExamplesComponent,
          AbbreviationsComponent,
-         CategoriesComponent
+         CategoriesComponent,
+         StudyComponent
         } from './pages/index';
 
 const routes: Routes = [
     { path: '',  redirectTo: 'home', pathMatch: 'full', },
     { path: 'home', component: HomeComponent },
+
+    { path: 'study', component: StudyComponent },
+
     { path: 'categories', component: CategoriesComponent,  children: [
         { path: '',  redirectTo: 'catergories', pathMatch: 'full', },
         { path: 'collision-avoidance', component: CategoriesComponent },
-        
         { path: 'visual-signals', component: CategoriesComponent },
         { path: 'communications', component: CategoriesComponent },
         { path: 'aerodromes', component: CategoriesComponent },
@@ -26,9 +29,9 @@ const routes: Routes = [
         { path: 'regulatsion-general-airspace', component: CategoriesComponent },
         { path: 'controllled-airspace', component: CategoriesComponent },
         { path: 'aviation-occurrences', component: CategoriesComponent },
-
     ]},
-    
+
+
     { path: 'abbreviations', component: AbbreviationsComponent },
     { path: '404', component: HomeComponent },
     { path: 'examples', component: ExamplesComponent },
