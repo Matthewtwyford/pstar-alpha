@@ -12,7 +12,8 @@ const routes: Routes = [
     { path: '',  redirectTo: 'home', pathMatch: 'full', },
     { path: 'home', component: HomeComponent },
 
-    { path: 'study', component: StudyComponent },
+    //{ path: 'study', component: StudyComponent },
+    { path: 'study/:id', component: StudyComponent },
 
     { path: 'categories', component: CategoriesComponent,  children: [
         { path: '',  redirectTo: 'catergories', pathMatch: 'full', },
@@ -44,9 +45,7 @@ const routes: Routes = [
       { useHash: true, /*enableTracing: true */ }, // <-- debugging purposes only
     )
   ],
-  exports: [
-    RouterModule
-  ],
+  exports: [ RouterModule ],
   providers: [ ]
 })
 export class AppRoutingModule {}
