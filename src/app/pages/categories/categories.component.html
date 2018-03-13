@@ -1,28 +1,36 @@
-  <mat-grid-list cols="6" rowHeight="200px">
+  
+  <h1> {{ title }}</h1>
+  
+  <mat-grid-list cols="2" rowHeight="200px" gutterSize='50px'>
+  
   <mat-grid-tile
       *ngFor="let category of categories"
       [colspan]="category.cols"
       [rowspan]="category.rows"
       [style.background]="category.color">
+    
     <mat-card class="example-card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>{{category.title}}</mat-card-title>
         <mat-card-subtitle>{{category.text}}</mat-card-subtitle>
       </mat-card-header>
+      
       <mat-card-content>
-        <!--
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
-        -->
+	       <!--
+	       <p>
+	         The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+	         A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+	         bred for hunting.
+	       </p>
+	       -->
       </mat-card-content>
+      
       <mat-card-actions>
           <button mat-raised-button color="primary">Primary</button>
           <button mat-raised-button color="accent">Accent</button>
       </mat-card-actions>
+    
     </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
