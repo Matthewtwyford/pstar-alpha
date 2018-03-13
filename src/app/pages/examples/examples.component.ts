@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class ExamplesComponent {
   title = 'exmaple';
   
+    color = 'primary';
+  mode = 'determinate';
+  value = 50;
+  
   
   tester = [
     {text: 'Soemthign', cols: 2, rows: 1, color: '#D32F2F'},

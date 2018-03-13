@@ -16,7 +16,10 @@ import { MatButtonModule,
          MatGridListModule,
          MatListModule,
          MatTooltipModule,
-         MatStepperModule
+         MatStepperModule,
+         MatProgressSpinnerModule,
+         MatRadioModule,
+         MatSliderModule
          } from '@angular/material';
 
 import { HomeComponent,
@@ -46,7 +49,10 @@ import { HomeComponent,
     MatGridListModule,
     MatListModule,
     MatTooltipModule,
-    MatStepperModule
+    MatStepperModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [ AppComponent ]
