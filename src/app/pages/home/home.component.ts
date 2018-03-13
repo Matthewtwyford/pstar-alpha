@@ -9,7 +9,7 @@ template: `
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
       [style.background]="tile.color">
-      <img mat-card-image src="/src/assets/images/{{ tile.img }}.jpeg" alt="">
+      <img mat-card-image src="assets/images/{{ tile.img }}.jpeg" alt="">
     <h2>{{tile.text}}</h2>
   </mat-grid-tile>
 </mat-grid-list>
@@ -21,9 +21,9 @@ export class HomeComponent {
 
    tiles = [
     {text: 'Take the Test', cols: 3, rows: 1, color: 'lightblue', img: 'photo1' },
-    {text: 'Revision',      cols: 1, rows: 2, color: 'lightgreen', img: 'photo1' },
-    {text: 'Categories',    cols: 1, rows: 1, color: 'lightpink', img: 'photo1' },
-    {text: 'Disclaimer',    cols: 2, rows: 1, color: '#DDBDF1', img: 'photo1' },
+    {text: 'Revision',      cols: 1, rows: 2, color: 'lightgreen', img: 'photo2' },
+    {text: 'Categories',    cols: 1, rows: 1, color: 'lightpink', img: 'photo3' },
+    {text: 'Disclaimer',    cols: 2, rows: 1, color: '#DDBDF1', img: 'photo4' },
   ];
 
 }
