@@ -39,7 +39,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(
       routes,
-      { useHash: true, enableTracing: true }, // <-- debugging purposes only
+      { useHash: true, /*enableTracing: true */ }, // <-- debugging purposes only
     )
   ],
   exports: [
