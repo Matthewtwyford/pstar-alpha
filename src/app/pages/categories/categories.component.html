@@ -1,7 +1,11 @@
   
   <h1>{{ title }}</h1>
+  <hr/>
   
-  <mat-grid-list cols="2" rowHeight="200px" gutterSize='50px'>
+  
+
+  
+  <mat-grid-list cols="12" rowHeight="200px" gutterSize='20px'>
   
   <mat-grid-tile
       *ngFor="let category of categories"
@@ -9,7 +13,7 @@
       [rowspan]="category.rows"
       [style.background]="category.color">
     
-    <mat-card class="example-card">
+    <mat-card class="card">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
         <mat-card-title>{{category.title}}</mat-card-title>
