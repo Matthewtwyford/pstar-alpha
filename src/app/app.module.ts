@@ -40,7 +40,7 @@ import { TitleComponent
     AbbreviationsComponent,
     ExamplesComponent,
     StudyComponent,
-    
+
     TitleComponent
   ],
   imports: [
@@ -60,6 +60,9 @@ import { TitleComponent
     MatProgressSpinnerModule,
     MatRadioModule,
     MatSliderModule
+  ],
+  exports: [
+    TitleComponent
   ],
   providers: [],
   bootstrap: [ AppComponent ]

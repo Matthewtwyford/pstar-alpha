@@ -31,7 +31,6 @@ const routes: Routes = [
         { path: 'aviation-occurrences', component: CategoriesComponent },
     ]},
 
-
     { path: 'abbreviations', component: AbbreviationsComponent },
     { path: '404', component: HomeComponent },
     { path: 'examples', component: ExamplesComponent },
