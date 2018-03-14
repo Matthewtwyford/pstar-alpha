@@ -9,6 +9,9 @@ export class AppComponent implements OnInit {
   title = 'pstar';
 
     ngOnInit() {
+      
+       sessionStorage.setItem('pstar', "");
+      
     }
 
 }

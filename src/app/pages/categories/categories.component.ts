@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
 template: `
@@ -20,8 +21,8 @@ template: `
         </mat-card-header>
 
         <mat-card-actions>
-          <button mat-raised-button color="primary" [routerLink]="['/study', category.id ]" matTooltip="test">Study {{ category.id }}</button>
-          <button mat-raised-button color="accent" [routerLink]="['/test' , category.id ]" matTooltip="Tester">Test</button>
+          <button mat-raised-button color="primary" (click)='studyCategory(category.id)' matTooltip="test">Study {{ category.id }}</button>
+          <button mat-raised-button color="accent"  [routerLink]="['/test' , category.id ]" matTooltip="Tester">Test</button>
         </mat-card-actions>
 
       </mat-card>
@@ -50,5 +51,17 @@ export class CategoriesComponent {
     { id: 13, title: '14.0 AVIATION OCCURRENCES' , text: 'sdsdsdsds' , cols: 12, rows: 1, color: '#F4F4F4'},
     { id: 14, title: '15.0 PIE CHOICES' , text: 'sdsdsdsds' , cols: 12, rows: 1, color: '#FFFFFFF'},
   ];
-
+  
+   constructor( 
+     private route: ActivatedRoute,
+     private router: Router
+   ) {}
+    
+  studyCategory( id ) {
+    //console.log("sdsdsds");
+          
+    sessionStorage.setItem('pstar', id );
+    this.router.navigate(['/study', id );
+  }
+  
 }
