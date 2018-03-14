@@ -22,7 +22,7 @@ template: `
 
         <mat-card-actions>
           <button mat-raised-button color="primary" (click)='studyCategory(category.id)' matTooltip="test">Study {{ category.id }}</button>
-          <button mat-raised-button color="accent"  [routerLink]="['/test' , category.id ]" matTooltip="Tester">Test</button>
+          <button mat-raised-button color="accent" (click)='testCategory(category.id)' matTooltip="Tester">Test</button>
         </mat-card-actions>
 
       </mat-card>
@@ -57,9 +57,12 @@ export class CategoriesComponent {
      private router: Router
    ) {}
     
+  testCategory( id ) {
+    sessionStorage.setItem('pstar', id );
+    this.router.navigate(['/test', id );
+  }
+    
   studyCategory( id ) {
-    //console.log("sdsdsds");
-          
     sessionStorage.setItem('pstar', id );
     this.router.navigate(['/study', id );
   }

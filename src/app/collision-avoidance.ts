@@ -1,16 +1,16 @@
 
-{
+
 	"1": {
 	  "catid" : "1",
 	  "title" : "Collision Avoidance",
 	  "summary" : "This is the summary for this section",
 	  
 	  
-	  "questions": {
+	  "questionsList": {
 	  	
 	  	"question": "Which statement is true with regard to aircraft converging at approximately the same altitude",
 	    "options": [
-	      { "id": 1, "option": "dsdsdsdsd",  correct: false },
+	      { "id": 1, "option": "dsdsdsdsd", correct: false },
 	      { "id": 2, "option": "sdsdsdsd", correct: true },
 	      { "id": 3, "option": "Closesdsdsddsd", correct: false }
 	    ]
