@@ -5,16 +5,14 @@ import { ActivatedRoute } from '@angular/router';
 template:`
  <app-pagetitle [pageTitle]="'Study'"></app-pagetitle>
 {{ id }}
- <mat-card>
+<mat-card>
    <h2> Q.1 Which statement is true with regard to aircraft converging at approximately the same altitude?.</h2>
-   
-   <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason">
+   <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
     <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
       {{answer}}
     </mat-radio-button>
   </mat-radio-group>
-  <div class="example-selected-value">Your favorite season is: {{favoriteSeason}}</div>
-
+  <div class="example-selected-value">Your favorite season is: {{ answer }}</div>
 </mat-card>
 `,
 styleUrls: ['./study.component.css']
@@ -48,5 +46,5 @@ export class StudyComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
-  
+
 }
