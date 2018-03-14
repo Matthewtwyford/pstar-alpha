@@ -1,16 +1,13 @@
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
+
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.example-icon {
-  padding: 0 14px;
+.example-radio-button {
+  margin: 5px;
 }
 
-.example-spacer {
-  flex: 1 1 auto;
-}
-
-.card {
-   min-width: 80vw;
+.example-selected-value {
+  margin: 15px 0;
 }

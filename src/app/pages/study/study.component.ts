@@ -7,41 +7,14 @@ template:`
 {{ id }}
  <mat-card>
    <h2> Q.1 Which statement is true with regard to aircraft converging at approximately the same altitude?.</h2>
-   <mat-list role="list">
+   
+   <mat-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason">
+    <mat-radio-button class="example-radio-button" *ngFor="let answer of answers" [value]="answer">
+      {{answer}}
+    </mat-radio-button>
+  </mat-radio-group>
+  <div class="example-selected-value">Your favorite season is: {{favoriteSeason}}</div>
 
-    <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
-        <mat-radio-button class="example-radio-button" [value]="1">
-            A jet airliner has the right of way over all other aircraft
-        </mat-radio-button>
-      </mat-radio-group>
-    </mat-list-item>
-    
-    <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
-        <mat-radio-button class="example-radio-button" [value]="2">
-            An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.
-        </mat-radio-button>
-      </mat-radio-group>
-    </mat-list-item>
-
-    <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
-        <mat-radio-button class="example-radio-button" [value]="3">
-            An aeroplane has the right of way over all other aircraft which are converging from the left.
-        </mat-radio-button>
-      </mat-radio-group>
-    </mat-list-item>
-
-    <mat-list-item role="listitem">
-      <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
-        <mat-radio-button class="example-radio-button" [value]="4">
-           Aeroplanes towing gliders must give way to helicopters.
-        </mat-radio-button>
-      </mat-radio-group>
-    </mat-list-item>
-  
-  </mat-list>
 </mat-card>
 `,
 styleUrls: ['./study.component.css']
@@ -53,9 +26,12 @@ export class StudyComponent implements OnInit, OnDestroy {
   id: number;
   private sub: any;
 
-  answer: string;
-
-  seasons = [ 'Winter', 'Spring', 'Summer', 'Autumn' ];
+  answers = [ 
+    'A jet airliner has the right of way over all other aircraft',
+    'An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.',
+    'An aeroplane has the right of way over all other aircraft which are converging from the left.',
+    'Aeroplanes towing gliders must give way to helicopters.'
+    ];
 
   constructor(
       private route: ActivatedRoute
