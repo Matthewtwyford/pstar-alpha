@@ -25,8 +25,12 @@ import { HomeComponent,
          ExamplesComponent,
          AbbreviationsComponent,
          CategoriesComponent,
-         StudyComponent
+         StudyComponent,
+         TestComponent
          } from './pages/index';
+
+import { SessionStorageService
+         } from './services/index';
 
 import { TitleComponent
          } from './elements/index';
@@ -40,6 +44,7 @@ import { TitleComponent
     AbbreviationsComponent,
     ExamplesComponent,
     StudyComponent,
+    TestComponent,
 
     TitleComponent
   ],
@@ -67,7 +72,9 @@ import { TitleComponent
     TitleComponent,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    SessionStorageService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

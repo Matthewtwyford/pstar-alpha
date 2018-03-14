@@ -5,7 +5,8 @@ import { HomeComponent,
          ExamplesComponent,
          AbbreviationsComponent,
          CategoriesComponent,
-         StudyComponent
+         StudyComponent,
+         TestComponent
         } from './pages/index';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
 
     { path: 'study/:catid', component: StudyComponent },
+    { path: 'test/:catid', component: TestComponent },
 
     { path: 'categories', component: CategoriesComponent,  children: [
         { path: '',  redirectTo: 'catergories', pathMatch: 'full', },

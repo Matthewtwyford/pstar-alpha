@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 @Component({
 template:`
- <app-pagetitle [pageTitle]="'Study'"></app-pagetitle>
+ <app-pagetitle [pageTitle]="'Tester'"></app-pagetitle>
 {{ catid }}
 <mat-card>
    <h2> Q.1 Which statement is true with regard to aircraft converging at approximately the same altitude?.</h2>
@@ -14,13 +14,14 @@ template:`
     </mat-radio-button>
   </mat-radio-group>
 
+  <!--<div class="example-selected-value">ANSWER: {{ answer.correct }}</div>-->
+
 </mat-card>
 `,
-styleUrls: ['./study.component.css']
+styleUrls: ['./test.component.css']
 })
-export class StudyComponent implements OnInit, OnDestroy {
+export class TestComponent implements OnInit, OnDestroy {
 
-  title = 'Study';
   catid: number;
   
   answer: any;
