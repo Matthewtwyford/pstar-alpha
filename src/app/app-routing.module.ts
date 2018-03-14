@@ -12,7 +12,7 @@ const routes: Routes = [
     { path: '',  redirectTo: 'home', pathMatch: 'full', },
     { path: 'home', component: HomeComponent },
 
-    { path: 'study/:id', component: StudyComponent },
+    { path: 'study/:catid', component: StudyComponent },
 
     { path: 'categories', component: CategoriesComponent,  children: [
         { path: '',  redirectTo: 'catergories', pathMatch: 'full', },

@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
 template:`
  <app-pagetitle [pageTitle]="'Study'"></app-pagetitle>
-{{ id }}
+{{ catid }}
 <mat-card>
    <h2> Q.1 Which statement is true with regard to aircraft converging at approximately the same altitude?.</h2>
    <mat-radio-group class="example-radio-group" [(ngModel)]="answer">
@@ -21,7 +21,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   
   title = 'Study';
 
-  id: number;
+  c: number;
   private sub: any;
 
   answers = [ 
@@ -38,7 +38,7 @@ export class StudyComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe(
       params => {
-       this.id = +params['id'];
+       this.catid = +params['catid'];
        // In a real app: dispatch action to load the details here.
     });
   }
