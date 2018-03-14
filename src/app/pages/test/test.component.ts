@@ -17,8 +17,8 @@ template: `
   <!--<div class="example-selected-value">ANSWER: {{ answer.correct }}</div>-->
 </mat-card>
 `,
-
 })
+  
 export class TestComponent implements OnInit, OnDestroy {
 
   catid: number;

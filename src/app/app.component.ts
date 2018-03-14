@@ -9,12 +9,14 @@ template: `
     <span [routerLink]="['/']" matTooltip="Home">Pstar app</span>
     <span class="spacer"></span>
 
-     <button mat-raised-button color="accent" [routerLink]="['/categories']" matTooltip="Categories">
+     <button mat-button [routerLink]="['/categories']" matTooltip="Categories">
       <mat-icon aria-label="icon-button with a heart icon">book</mat-icon> Categories
-     </button>     
-     <button mat-raised-button color="accent" [routerLink]="['/pstar-exam']" matTooltip="Take exma">
-      <mat-icon aria-label="icon-button with a heart icon">assignment_turned_in</mat-icon> Take Exam
-     </button>
+    </button>
+
+    <button mat-button [routerLink]="['/categories']" matTooltip="Categories">
+      <mat-icon aria-label="icon-button with a heart icon">assignment_turned_in</mat-icon> Take exam
+    </button>
+
   </mat-toolbar-row>
 </mat-toolbar>
 
@@ -24,9 +26,11 @@ template: `
   <span class='spacer'></span>
     <h5>© Copyright Angular Apps 2017.</h5>
     <span class='spacer'></span>
-    <button mat-raised-button color="primary" [routerLink]="['abbreviations']" matTooltip="Abbreviation">
-      <mat-icon aria-label="icon-button with a heart icon">book</mat-icon> Abbreviation
-    </button>
+    
+     <button mat-button [routerLink]="['/abbreviations']" matTooltip="Categories">
+        <mat-icon aria-label="icon-button with a heart icon">book</mat-icon> Abbreviation
+     </button> 
+    
 </mat-toolbar>
 `
 })
