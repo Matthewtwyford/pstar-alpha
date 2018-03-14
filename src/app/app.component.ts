@@ -24,7 +24,7 @@ template: `
 
 <mat-toolbar color='accent'>
   <span class='spacer'></span>
-    <h5>© Copyright Angular Apps 2017.</h5>
+    <p>© Copyright Angular Apps 2017.</p>
     <span class='spacer'></span>
     
      <button mat-button [routerLink]="['/abbreviations']" matTooltip="Categories">
