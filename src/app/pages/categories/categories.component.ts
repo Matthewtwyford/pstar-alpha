@@ -21,8 +21,8 @@ template: `
         </mat-card-header>
 
         <mat-card-actions>
-          <button mat-raised-button color="primary" (click)='studyCategory(category.id)' matTooltip="test">Study {{ category.id }}</button>
-          <button mat-raised-button color="accent" (click)='testCategory(category.id)' matTooltip="Tester">Test</button>
+          <button mat-raised-button color="primary" (click)='studyCategory( category.id )' matTooltip="test">Study {{ category.id }}</button>
+          <button mat-raised-button color="accent" (click)='testCategory( category.id )' matTooltip="Tester">Test</button>
         </mat-card-actions>
 
       </mat-card>
@@ -58,13 +58,14 @@ export class CategoriesComponent {
    ) {}
     
   testCategory( id ) {
-    sessionStorage.setItem('pstar', id );
-    this.router.navigate(['/test', id );
+    sessionStorage.setItem( 'pstar' , id );
+    this.router.navigate( '/test' , id );
   }
     
   studyCategory( id ) {
-    sessionStorage.setItem('pstar', id );
-    this.router.navigate(['/study', id );
+    sessionStorage.setItem( 'pstar' , id );
+    this.router.navigate( '/study' , id );
   }
+  
   
 }
