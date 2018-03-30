@@ -1,14 +1,28 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-examples',
-  templateUrl: './abbreviations.component.html',
-  styleUrls: ['./abbreviations.component.css']
+selector: 'app-abbreviations',
+template: `
+<app-pagetitle [pageTitle]="title"></app-pagetitle>
+
+
+<mat-list *ngFor="let letter of abbreviations">
+  <h2 mat-subheader>narm  {{ letter }}</h2>
+  <mat-list-item *ngFor="let item of letter">
+    <mat-icon mat-list-icon>folder</mat-icon>
+    <h4 mat-line>{{ letter.attr }}</h4>
+    <p mat-line> {{ item.text }}</p>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>
+
+`,
+style : []
 })
 export class AbbreviationsComponent {
-  title = 'abbreviatsion';
+  title = 'Abbreviations';
 
-  /*
+
   abbreviations: any = [
 
     "A" : [
@@ -33,6 +47,6 @@ export class AbbreviationsComponent {
        { attr: 'DD', text: 'CCCCAir Defence Identicationm Zone'},
       ],
   ];
-  */
+ 
   
 }

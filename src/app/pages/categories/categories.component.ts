@@ -4,20 +4,18 @@ import { Router, ActivatedRoute } from '@angular/router';
 @Component({
 template: `
  <app-pagetitle [pageTitle]="'Categories'"></app-pagetitle>
-
     <mat-grid-list cols="12" rowHeight="200px" gutterSize='20px'>
-
     <mat-grid-tile
-        *ngFor="let category of categories"
-        [colspan]="category.cols"
-        [rowspan]="category.rows"
-        [style.background]="category.color">
+     *ngFor="let category of categories"
+     [colspan]="category.cols"
+     [rowspan]="category.rows"
+     [style.background]="category.color">
 
-      <mat-card class="card">
-        <mat-card-header>
-         <div mat-card-avatar class="example-header-image"></div>
-         <mat-card-title>{{ category.title }}</mat-card-title>
-         <mat-card-subtitle>{{ category.text }}</mat-card-subtitle>
+   <mat-card class="card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{ category.title }}</mat-card-title>
+          <mat-card-subtitle>{{ category.text }}</mat-card-subtitle>
         </mat-card-header>
 
         <mat-card-actions>
@@ -25,8 +23,10 @@ template: `
           <button mat-raised-button color="accent" (click)='testCategory( category.id )' matTooltip="Tester">Test</button>
         </mat-card-actions>
 
-      </mat-card>
-    </mat-grid-tile>
+     </mat-card>
+    
+   </mat-grid-tile>
+  
   </mat-grid-list>
 `,
   styleUrls: ['./categories.component.css']
@@ -57,14 +57,14 @@ export class CategoriesComponent {
      private router: Router
    ) {}
     
-  testCategory( id ) {
+  testCategory( id: any ) {
     sessionStorage.setItem( 'pstar' , id );
-    this.router.navigate( '/test' , id );
+    this.router.navigate([ 'test' , id ]);
   }
     
-  studyCategory( id ) {
+  studyCategory( id: any ) {
     sessionStorage.setItem( 'pstar' , id );
-    this.router.navigate( '/study' , id );
+    this.router.navigate([ 'study' , id ]);
   }
   
   
