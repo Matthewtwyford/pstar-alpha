@@ -4,41 +4,35 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
 template:`
 
-  
-  
  <app-pagetitle [pageTitle]="page['title']"></app-pagetitle>
 {{ catid }}
-
-
 
 <mat-grid-list cols="12" rowHeight="400px" gutterSize='20px'>
   <mat-grid-tile *ngFor="let questions of page.questions"
      [colspan]="12"
      [rowspan]="1"
      [style.background]="'#F4F4F4'">
-
-    <mat-card class="card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title> <h2>{{ questions.id }}  {{ questions.question }}</h2></mat-card-title>
-        </mat-card-header>
-
-        <mat-card-content>
-           <mat-list role="list">
-              <mat-list-item role="listitem" *ngFor="let option of questions.options">
-                  {{ option.text }} <span [ngClass]="{'bold' :  option.correct  }"> {{ option.correct }} </span>
-                  <mat-divider></mat-divider>
-              </mat-list-item>
-            </mat-list>
-        </mat-card-content>
   
-     </mat-card>
+      <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title> <h2>{{ questions.id }}  {{ questions.question }}</h2></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+             <mat-list role="list">
+                <mat-list-item role="listitem" *ngFor="let option of questions.options">
+                    {{ option.text }} <span [ngClass]="{'bold' :  option.correct  }"> {{ option.correct }} </span>
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+              </mat-list>
+          </mat-card-content>
+       </mat-card>
     
    </mat-grid-tile>
  </mat-grid-list>
   
   
-
+<!--
 <mat-card *ngFor="let questions of page.questions">
    <h2>{{ questions.id }}  {{ questions.question }}</h2>   
    <mat-list role="list">
@@ -48,6 +42,7 @@ template:`
     </mat-list-item>
   </mat-list>
 </mat-card>
+-->
 `,
 styleUrls: ['./study.component.css']
 })
