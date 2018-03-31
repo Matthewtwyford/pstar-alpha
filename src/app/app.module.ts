@@ -34,13 +34,12 @@ import { HomeComponent,
          TestComponent
          } from './pages/index';
 
-import { SessionStorageService
-         } from './services/index';
+import { 
+  SessionStorageService,
+  //MockService
+} from './services/index';
 
-import { TitleComponent
-         } from './elements/index';
-
-
+import { TitleComponent } from './elements/index';
 
 @NgModule({
   declarations: [
