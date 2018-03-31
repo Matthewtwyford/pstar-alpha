@@ -5,8 +5,12 @@ selector: 'app-abbreviations',
 template: `
 <app-pagetitle [pageTitle]="abbreviations.title"></app-pagetitle>
 
-  {{ abbreviations | json }}
-
+{{ abbreviations | json }}
+<hr/>
+{{ abbreviations.sections | json }}
+<hr/>
+{{ abbreviations.sections.attrs | json }}
+  
   
 <mat-list *ngFor="let sections of abbreviations.sections">
   <h2 mat-subheader> {{ sections.letterTitle }}</h2>
@@ -31,23 +35,21 @@ export class AbbreviationsComponent {
   title = 'Abbreviations';
 
   abbreviations = {
-    
     "title" : "Abbreviations",
     
     "sections" : [
  
         {
           "letterTitle" : "A" ,
-          
-          //"attrs" : [
-           //{ attr: 'AAE', text: 'Above Aerodrome level'},
-           //{ attr: 'ADIZ', text: 'Air Defence Identicationm Zone'},          
-          //]
+          "attrs" : [
+           { attr: 'AAE', text: 'Above Aerodrome level'},
+           { attr: 'ADIZ', text: 'Air Defence Identicationm Zone'},          
+          ]
 
       },
               {
           "letterTitle" : "B" ,
-         // "sections" : [
+         // "attrs" : [
            // { attr: 'AAE', text: 'Above Aerodrome level'},
            // { attr: 'ADIZ', text: 'Air Defence Identicationm Zone'},          
          // ]
