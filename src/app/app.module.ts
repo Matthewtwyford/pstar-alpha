@@ -12,7 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { MatButtonModule,
+import { MatTabsModule,
+         MatButtonModule,
          MatCheckboxModule,
          MatCardModule,
          MatToolbarModule,

@@ -4,7 +4,9 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
 template:`
 
- <app-pagetitle [pageTitle]="page['title']"></app-pagetitle>
+  <app-tags></app-tags>
+
+<app-pagetitle [pageTitle]="page['title']"></app-pagetitle>
 {{ catid }}
 
 <mat-grid-list cols="12" rowHeight="400px" gutterSize='20px'>
