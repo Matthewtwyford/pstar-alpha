@@ -1,17 +1,14 @@
 import { Component } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-
 import { COLLISIONAVOIDANCE } from '../../collision-avoidance';
-
 
 @Component({
 template: `
  <app-pagetitle [pageTitle]="'Categories'"></app-pagetitle>
     
-    
-    {{ content }} sdsdsd
-    
+    {{ content }} 
+
     <mat-grid-list cols="12" rowHeight="200px" gutterSize='20px'>
     <mat-grid-tile
      *ngFor="let category of categories"
@@ -40,16 +37,13 @@ template: `
   styleUrls: ['./categories.component.css']
 })
 
-
-
-
-
 export class CategoriesComponent {
   
  public content = COLLISIONAVOIDANCE;
   
   
   title = 'Categories';
+  
 
   categories = [
     { id: 0, title: '1.0 COLLISION AVOIDANCE', text: 'sdsdsdsds', cols: 12, rows: 1, color: '#FFFFFFF'},
@@ -84,5 +78,5 @@ export class CategoriesComponent {
     this.router.navigate([ 'study' , id ]);
   }
   
-  
+ 
 }

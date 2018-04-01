@@ -1,57 +1,9 @@
-import { Component } from '@angular/core';
 
-import { ABBREVIATIONS } from '../../abbreviations';
-
-
-@Component({
-selector: 'app-abbreviations',
-template: `
-
-
-<app-pagetitle [pageTitle]="abbreviations.title"></app-pagetitle>
-
-<mat-grid-list cols="12" rowHeight="400px" gutterSize='0px'>
-  <mat-grid-tile *ngFor="let letter of abbreviations.letters"
-     
-     [colspan]="12"
-     [rowspan]="1"
-     [style.background]="'#F4F4F4'">
-  
-      <mat-card class="card">
-        <mat-card-header>
-            <mat-card-title><h2>{{ letter.letter }}</h2></mat-card-title>
-          </mat-card-header>
-          
-          <mat-card-content>
-             <mat-list role="list">
-                <mat-list-item role="listitem" *ngFor="let attr of letter.attrs">
-                  {{ attr.name }} {{ attr.text }}
-                    <mat-divider></mat-divider>
-                </mat-list-item>
-              </mat-list>
-          </mat-card-content>
-       </mat-card>
-   </mat-grid-tile>
- </mat-grid-list>
-`
-})
-export class AbbreviationsComponent {
-   
-
-  
-   constructor ( ) {
-     
-     //this.abbreviations = ABBREVIATIONS;
-     
-      //console.log("abbrc", ABBREVIATIONS );
-   }
-  
-  
-
-    abbreviations = {
+export class ABBREVIATIONS {
     
-    'title' : 'Abbreviations',
-    'letters' : [
+    title: "Abbreviations";
+  
+    letters = [
        {
         'letter' : "A",
           attrs : [
@@ -238,7 +190,7 @@ export class AbbreviationsComponent {
             { name: "CCC", text : 'An aeroplane has the right of way over all other aircraft which are converging from the left.' }
             ]
         },    
-         {
+        {
         'letter' : "X",
           attrs : [
             { name: "C",  text : 'A jet airliner has the right of way over all other aircraft' },
@@ -246,7 +198,7 @@ export class AbbreviationsComponent {
             { name: "CCC", text : 'An aeroplane has the right of way over all other aircraft which are converging from the left.' }
             ]
         },
-         {
+        {
         'letter' : "Y",
           attrs : [
             { name: "C",  text : 'A jet airliner has the right of way over all other aircraft' },
@@ -260,9 +212,7 @@ export class AbbreviationsComponent {
             { name: "C",  text : 'A jet airliner has the right of way over all other aircraft' },
             { name: "CC", text : 'An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.' },
             { name: "CCC", text : 'An aeroplane has the right of way over all other aircraft which are converging from the left.' }
-            ]
+          ]
         }
     ]
-  };
- 
-}
+ }
