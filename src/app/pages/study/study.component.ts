@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
 template:`
 
-  <app-tags></app-tags>
+<app-tags></app-tags>
 
 <app-pagetitle [pageTitle]="page['title']"></app-pagetitle>
 {{ catid }}

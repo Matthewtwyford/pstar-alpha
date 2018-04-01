@@ -40,7 +40,7 @@ import {
   SessionStorageService,
 } from './services/index';
 
-import { TitleComponent } from './elements/index';
+import { TitleComponent, TabsComponent } from './elements/index';
 
 @NgModule({
   declarations: [
