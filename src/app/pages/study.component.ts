@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { COLLISIONAVOIDANCE } from '../../collision-avoidance';
+import { COLLISIONAVOIDANCE } from '../collision-avoidance';
 
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ABBREVIATIONS } from '../../abbreviations';
+import { ABBREVIATIONS } from '../abbreviations';
 
 
 @Component({
@@ -41,9 +41,6 @@ export class AbbreviationsComponent {
   
    constructor ( ) {
      
-     //this.abbreviations = ABBREVIATIONS;
-     
-      //console.log("abbrc", ABBREVIATIONS );
    }
   
   

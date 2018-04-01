@@ -33,7 +33,6 @@ import { HomeComponent,
          AbbreviationsComponent,
          CategoriesComponent,
          StudyComponent,
-         TestComponent
          } from './pages/index';
 
 import { 
@@ -50,7 +49,6 @@ import { TitleComponent, TabsComponent } from './elements/index';
     AbbreviationsComponent,
     ExamplesComponent,
     StudyComponent,
-    TestComponent,
     TitleComponent,
     TabsComponent
   ],

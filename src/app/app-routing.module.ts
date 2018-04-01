@@ -6,7 +6,6 @@ import { HomeComponent,
          AbbreviationsComponent,
          CategoriesComponent,
          StudyComponent,
-         TestComponent
         } from './pages/index';
 
 const routes: Routes = [
@@ -16,8 +15,6 @@ const routes: Routes = [
     { path: 'categories', component: CategoriesComponent }, 
 
     { path: 'study/:catid', component: StudyComponent },
-    { path: 'test/:catid', component: TestComponent },
-
     { path: 'abbreviations', component: AbbreviationsComponent },
     { path: '404', component: HomeComponent },
     { path: 'examples', component: ExamplesComponent },
