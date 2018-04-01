@@ -1,9 +1,14 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-@Component({
-template:`
+import { COLLISIONAVOIDANCE } from '../../collision-avoidance';
 
+
+@Component({
+template: `
+
+{{ content  }}
+  
 <app-pagetitle [pageTitle]="CollisionAvoidance['title']"></app-pagetitle>
 {{ catid }}
 
@@ -38,9 +43,36 @@ styleUrls: ['./study.component.css']
 })
 export class StudyComponent implements OnInit, OnDestroy {
 
+ public content = COLLISIONAVOIDANCE;
+  
+  
   public catid: number;
   private sub: any;
+
   
+
+  constructor(
+      private route: ActivatedRoute
+      ) {
+  
+  console.log( this.content );
+  
+  }
+
+  ngOnInit() {
+    this.sub = this.route.params.subscribe(
+      params => {
+       this.catid = +params['catid'];
+       // In a real app: dispatch action to load the details here.
+    });
+  }
+
+  ngOnDestroy() {
+    this.sub.unsubscribe();
+  }
+
+  
+    
   CollisionAvoidance = {
     'catid' : 1,
     'title' : 'Collision Avoidance',
@@ -151,22 +183,4 @@ export class StudyComponent implements OnInit, OnDestroy {
 
  };
   
-
-
-  constructor(
-      private route: ActivatedRoute
-      ) {}
-
-  ngOnInit() {
-    this.sub = this.route.params.subscribe(
-      params => {
-       this.catid = +params['catid'];
-       // In a real app: dispatch action to load the details here.
-    });
-  }
-
-  ngOnDestroy() {
-    this.sub.unsubscribe();
-  }
-
 }

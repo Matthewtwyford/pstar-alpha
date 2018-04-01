@@ -1,10 +1,11 @@
 import { Category } from './category';
 
-export class COLLISIONAVOIDANCE: Category[] = [
-    
-    'catid' : 1,
-    'title' : 'Collision Avoidance',    
-    'questions' : [
+export class COLLISIONAVOIDANCE {
+ 
+    catid: 1;
+    title: "Collision Avoidance";
+   
+    questions = [
        {
         'id' : 1,
         'question' : 'Which statement is true with regard to aircraft converging at approximately the same altitude?',
@@ -106,4 +107,4 @@ export class COLLISIONAVOIDANCE: Category[] = [
         ]
        }
     ]
- ];
+ }
