@@ -41,7 +41,6 @@ export class CategoriesComponent {
   
   title = 'Categories';
   
-
   categories = [
     { id: 0, title: '1.0 COLLISION AVOIDANCE', text: 'sdsdsdsds', cols: 12, rows: 1, color: '#FFFFFFF'},
     { id: 1, title: '2.0 VISUAL SIGNALS' , text: 'sdsds' , cols: 12, rows: 1, color: '#F4F4F4'},
