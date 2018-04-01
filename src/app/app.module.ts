@@ -51,7 +51,8 @@ import { TitleComponent, TabsComponent } from './elements/index';
     ExamplesComponent,
     StudyComponent,
     TestComponent,
-    TitleComponent
+    TitleComponent,
+    TabsComponent
   ],
   
   imports: [
@@ -82,6 +83,7 @@ import { TitleComponent, TabsComponent } from './elements/index';
     MatProgressSpinnerModule,
     MatRadioModule,
     MatSliderModule,
+    MatTabsModule,
     FormsModule
   ],
   
