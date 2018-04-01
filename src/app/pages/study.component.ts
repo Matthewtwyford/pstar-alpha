@@ -15,7 +15,8 @@ template: `
 <app-tags></app-tags>
   
   
-<mat-grid-list cols="12" rowHeight="400px" gutterSize='20px'>
+  
+<mat-grid-list cols="12" rowHeight="400px">
   <mat-grid-tile *ngFor="let questions of CollisionAvoidance.questions"
      [colspan]="12"
      [rowspan]="1"
@@ -24,6 +25,10 @@ template: `
       <mat-card class="card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
+
+  
+        <mat-icon aria-label="icon-button with a heart icon">airplanemode_active</mat-icon>
+  
             <mat-card-title> <h2>{{ questions.id }}  {{ questions.question }}</h2></mat-card-title>
           </mat-card-header>
           <mat-card-content>

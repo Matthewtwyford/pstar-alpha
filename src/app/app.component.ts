@@ -13,6 +13,10 @@ template: `
       <mat-icon aria-label="icon-button with a heart icon">book</mat-icon> Categories
     </button>
 
+       <button mat-button [routerLink]="['/categories']" matTooltip="Categories">
+      <mat-icon aria-label="icon-button with a heart icon">airplanemode_active</mat-icon>
+    </button>
+
     <button mat-button [routerLink]="['/categories']" matTooltip="Categories">
       <mat-icon aria-label="icon-button with a heart icon">assignment_turned_in</mat-icon> Take exam
     </button>
