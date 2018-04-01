@@ -17,9 +17,7 @@ template: `
         <div class="demo-tab-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
           Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+         
         </div>
       </mat-tab>
 
@@ -30,12 +28,10 @@ template: `
         <div class="demo-tab-content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue.
           Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus.
-          In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec,
-          feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor,
-          orci enim rutrum enim, vel tempor sapien arcu a tellus.
+
         </div>  
       </mat-tab>
-      <mat-tab label="Tab 3" disabled>
+      <mat-tab label="Tab 3" >
         <ng-template mat-tab-label>
           <mat-icon>block</mat-icon>
         </ng-template>
