@@ -5,35 +5,72 @@ selector: 'app-abbreviations',
 template: `
 <app-pagetitle [pageTitle]="abbreviations.title"></app-pagetitle>
 
-{{ abbreviations | json }}
+{{ abbreviations | json }}  
 <hr/>
-{{ abbreviations.sections | json }}
-<hr/>
-{{ abbreviations.sections.attrs | json }}
-  
-  
-<mat-list *ngFor="let sections of abbreviations.sections">
-  <h2 mat-subheader> {{ sections.letterTitle }}</h2>
 
-
-   <!-- 
-  <mat-list-item *ngFor="let attrs of sections">
-    <mat-icon mat-list-icon>folder</mat-icon>
-  <h4 mat-line>{{ sections.attrs.attr }}</h4>
-    <p mat-line> {{ sections.attrs.text }}</p>
+    
+<mat-grid-list cols="12" rowHeight="400px" gutterSize='20px'>
   
-  </mat-list-item>
-  -->
+  <mat-grid-tile *ngFor="let letter of abbreviations.letters"
+     
+     [colspan]="12"
+     [rowspan]="1"
+     [style.background]="'#F4F4F4'">
   
-  <mat-divider></mat-divider>
-
-</mat-list>
+      <mat-card class="card">
+        <mat-card-header>
+          
+          <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title> <h2>{{ letter.letter }}</h2></mat-card-title>
+          </mat-card-header>
+          
+          <mat-card-content>
+             <mat-list role="list">
+                <mat-list-item role="listitem" *ngFor="let attr of letter.attrs">
+                  {{ attr.name }} {{ attr.text }}
+                    <mat-divider></mat-divider>
+                </mat-list-item>
+              </mat-list>
+          </mat-card-content>
+       </mat-card>
+    
+   </mat-grid-tile>
+ </mat-grid-list>
+  
+  
 
 `
 })
 export class AbbreviationsComponent {
-  title = 'Abbreviations';
+   
 
+    abbreviations = {
+    
+    'title' : 'Abbreviations',
+    'letters' : [
+       {
+        'letter' : "A",
+          attrs : [
+            { name: "ATIZ",  text : 'A jet airliner has the right of way over all other aircraft' },
+            { name: "AA", text : 'An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.' },
+            { name: "AAAA", text : 'An aeroplane has the right of way over all other aircraft which are converging from the left.' },
+            { name: "AAAAA", text : 'Aeroplanes towing gliders must give way to helicopters.' }
+            ]
+        },
+        {
+        'letter' : "B",
+          attrs : [
+            { name: "BB",  text : 'A jet airliner has the right of way over all other aircraft' },
+            { name: "BB", text : 'An aircraft towing objects has the right of way over all power-driven heavier-than-air aircraft.' },
+            { name: "BBBBBB", text : 'An aeroplane has the right of way over all other aircraft which are converging from the left.' },
+            { name: "BBBBB", text : 'Aeroplanes towing gliders must give way to helicopters.' }
+            ]
+        },     
+    ]
+  };
+  
+  
+  /*
   abbreviations = {
     "title" : "Abbreviations",
     
@@ -46,13 +83,13 @@ export class AbbreviationsComponent {
            { attr: 'ADIZ', text: 'Air Defence Identicationm Zone'},          
           ]
 
-      },
-              {
+        },
+        {
           "letterTitle" : "B" ,
-         // "attrs" : [
-           // { attr: 'AAE', text: 'Above Aerodrome level'},
-           // { attr: 'ADIZ', text: 'Air Defence Identicationm Zone'},          
-         // ]
+         "attrs" : [
+           { attr: 'AAE', text: 'Above Aerodrome level'},
+           { attr: 'ADIZ', text: 'Air Defence Identicationm Zone'},                 
+         ]
 
       }
       
@@ -62,32 +99,8 @@ export class AbbreviationsComponent {
     
     
   };
+   */
  
-  
-  
-  
-  
-  
-  
-  
-   myObj = {
-    "name":"John",
-    "age":30,
-    "cars": [
-        
-        { 
-          "name":"Ford", 
-          "models":[ 
-            "Fiesta", 
-            "Focus", 
-            "Mustang" 
-          ] 
-        },
-        
-        { "name":"BMW", "models":[ "320", "X3", "X5" ] },
-        { "name":"Fiat", "models":[ "500", "Panda" ] }
-    ]
- } 
   
   
 }
