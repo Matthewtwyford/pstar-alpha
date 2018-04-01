@@ -4,13 +4,14 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
 template:`
 
-<app-tags></app-tags>
-
-<app-pagetitle [pageTitle]="page['title']"></app-pagetitle>
+<app-pagetitle [pageTitle]="CollisionAvoidance['title']"></app-pagetitle>
 {{ catid }}
 
+<app-tags></app-tags>
+  
+  
 <mat-grid-list cols="12" rowHeight="400px" gutterSize='20px'>
-  <mat-grid-tile *ngFor="let questions of page.questions"
+  <mat-grid-tile *ngFor="let questions of CollisionAvoidance.questions"
      [colspan]="12"
      [rowspan]="1"
      [style.background]="'#F4F4F4'">
@@ -32,19 +33,6 @@ template:`
     
    </mat-grid-tile>
  </mat-grid-list>
-  
-  
-<!--
-<mat-card *ngFor="let questions of page.questions">
-   <h2>{{ questions.id }}  {{ questions.question }}</h2>   
-   <mat-list role="list">
-    <mat-list-item role="listitem" *ngFor="let option of questions.options">
-        {{ option.text }} <span [ngClass]="{'bold' :  option.correct  }"> {{ option.correct }} </span>
-        <mat-divider></mat-divider>
-    </mat-list-item>
-  </mat-list>
-</mat-card>
--->
 `,
 styleUrls: ['./study.component.css']
 })
@@ -52,9 +40,8 @@ export class StudyComponent implements OnInit, OnDestroy {
 
   public catid: number;
   private sub: any;
-
   
-  page = {
+  CollisionAvoidance = {
     'catid' : 1,
     'title' : 'Collision Avoidance',
     'questions' : [
