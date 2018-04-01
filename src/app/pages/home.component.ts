@@ -14,7 +14,6 @@ template: `
   </mat-grid-tile>
 </mat-grid-list>
 `,
-   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
   title = 'home';

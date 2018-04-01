@@ -39,7 +39,6 @@ template: `
    </mat-grid-tile>
  </mat-grid-list>
 `,
-styleUrls: ['./study.component.css']
 })
 export class StudyComponent implements OnInit, OnDestroy {
 

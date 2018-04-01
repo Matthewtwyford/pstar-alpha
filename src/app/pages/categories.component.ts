@@ -32,7 +32,6 @@ template: `
   
   </mat-grid-list>
 `,
-  styleUrls: ['./categories.component.css']
 })
 
 export class CategoriesComponent {
